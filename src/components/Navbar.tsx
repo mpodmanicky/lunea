@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
+import Logo from "../assets/logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [languageMenu, setLanguageMenu] = useState(false);
+  const languages = ["EN", "SK"];
+  const [globalLanguage, setGlobalLanguage] = useState('');
   return (
     <nav className="bg-charcoal">
       <div className="h-16 relative items-center flex">
-        <div className="text-gunmetal font-playfair text-3xl px-4">LOGO</div>
+        <div className="px-4">
+          <Logo className="w-40" />
+        </div>
         {/*Desktop buttons */}
         <div className="hidden sm:block">
           <a
@@ -50,6 +56,7 @@ export default function Navbar() {
             title="Language"
             className="p-2 rounded-md text-gunmetal hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20"
             onClick={() => {
+              setLanguageMenu(!languageMenu);
               /* handle language change */
             }}
           >
@@ -73,7 +80,6 @@ export default function Navbar() {
               />
             </svg>
           </button>
-
           {/* Profile (user) */}
           <button
             type="button"
@@ -139,6 +145,27 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
+      </div>
+      <div className={`${languageMenu ? "block" : "hidden"} text-goldAccent`}>
+        <button className="p-2 rounded hover:cursor-pointer m-auto focus:bg-white/10 active:bg-white/10"
+          onClick={() => {
+            console.log("Setting language to", languages[0]);
+            setGlobalLanguage(languages[0])
+            console.log(globalLanguage);
+          }}
+        >
+          {languages[0]}
+        </button>
+        <br></br>
+        <button className="p-2 rounded hover:cursor-pointer m-auto focus:bg-white/10 active:bg-white/10"
+          onClick={() => { 
+            console.log("Setting language to", languages[1]);
+            setGlobalLanguage(languages[1])
+            console.log(globalLanguage);
+          }}
+        >
+          {languages[1]}
+        </button>
       </div>
       {/*mobile buttons */}
       <div

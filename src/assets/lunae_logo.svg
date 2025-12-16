@@ -1,0 +1,30 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="602px" height="146px">
+<defs>
+<linearGradient id="PSgrad_0" x1="0%" x2="25.882%" y1="96.593%" y2="0%">
+  <stop offset="0%" stop-color="rgb(199,168,110)" stop-opacity="1" />
+  <stop offset="25%" stop-color="rgb(226,206,168)" stop-opacity="1" />
+  <stop offset="50%" stop-color="rgb(199,168,110)" stop-opacity="1" />
+  <stop offset="74%" stop-color="rgb(226,206,168)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(199,168,110)" stop-opacity="1" />
+</linearGradient>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="602px" height="146px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="4" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.236" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 1.43600298244082, 0, 0, 1.43600298244083,4.79682985280289, 135.274138683498)" font-size="139.275px"><tspan font-size="139.275px" font-family="Inria Serif">LUNAE</tspan></text>
+<text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 1.43600298244082, 0, 0, 1.43600298244083,4.79682985280289, 135.274138683498)" font-size="139.275px"><tspan font-size="139.275px" font-family="Inria Serif">LUNAE</tspan></text>
+</g>
+</svg>
