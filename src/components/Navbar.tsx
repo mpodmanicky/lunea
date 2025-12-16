@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../assets/logo";
+import {NavLink} from "react-router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,9 @@ export default function Navbar() {
     <nav className="bg-charcoal">
       <div className="h-16 relative items-center flex">
         <div className="px-4">
-          <Logo className="w-40" />
+          <NavLink to="/">
+            <Logo className="w-40" />
+          </NavLink>
         </div>
         {/*Desktop buttons */}
         <div className="hidden sm:block">
