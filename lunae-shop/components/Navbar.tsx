@@ -47,13 +47,7 @@ export default function Navbar() {
           </div>
           {/*icons */}
           <div className="absolute right-2">
-            {/* hamburger menu icon */}
-            <button
-              className="sm:hidden p-2 rounded-md text-gunmetal hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <CiMenuBurger size={24} className="text-goldAccent" />
-            </button>
+            
             {/* Language (globe) */}
             <button
               type="button"
@@ -148,6 +142,13 @@ export default function Navbar() {
                   strokeWidth="2"
                 />
               </svg>
+            </button>
+            {/* hamburger menu icon */}
+            <button
+              className="sm:hidden p-2 rounded-md text-gunmetal hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <CiMenuBurger size={24} className="text-goldAccent" />
             </button>
           </div>
         </div>
