@@ -1,12 +1,14 @@
-import { useState } from "react";
 import "./App.css";
-import Homepage from "./pages/Homepage";
+import { BrowserRouter, Routes, Route } from 'react-router';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <div className="bg-gunmetal">  
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
