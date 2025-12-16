@@ -3,12 +3,14 @@ import "./App.css";
 import Button from "./components/Button";
 import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Navbar />
       <Button props={"Click"} />
 
       <div className="overflow-x-auto">
