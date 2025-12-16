@@ -11,8 +11,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <Button props={"Click"} />
-
       <div className="overflow-x-auto">
         <div className="flex flex-nowrap">
           <ProductCard
