@@ -14,7 +14,7 @@ export default function ProductCard({
   return (
     <div className="flex-none w-72 md:w-md flex-col p-2 bg-gunmetal drop-shadow-md transition-transform duration-200 ease-out hover:translate-y-2 hover:shadow-lg">
       {/* Image 2placeholder replaced with real picture image_link*/}
-      <img src="public/globe.svg" alt="Product image" className="w-full" />
+      <img src="public/vercel.svg" alt="Product image" className="w-full" />
       <h1 className=" text-charcoal font-bold text-left md:text-2xl">
         {title}
       </h1>

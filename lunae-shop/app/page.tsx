@@ -7,8 +7,9 @@ export default function Home() {
   return (
     <div className="bg-gunmetal">
       <Navbar />
+      {/* Carousel as hero  */}
       <div className="w-full p-5 flex flex-col">
-        <div className="text-3xl md:text-left font-playfair text-charcoal px-4">
+        <div className="text-3xl md:text-4xl md:text-left font-playfair text-charcoal px-4">
           FEATURED PRODUCTS
         </div>
         <div className="overflow-x-auto">
@@ -36,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <br></br>
-        <div className="text-3xl md:text-left font-playfair text-charcoal px-4">
+        <div className="text-3xl md:text-4xl md:text-left font-playfair text-charcoal px-4">
           LATEST BLOGS
         </div>
         <div className="overflow-x-auto">

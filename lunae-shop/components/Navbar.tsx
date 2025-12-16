@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "./Logo";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,9 @@ export default function Navbar() {
       <nav className="bg-charcoal fixed top-0 left-0 right-0 z-50">
         <div className="h-16 relative items-center flex">
           <div className="px-4">
-            <Logo title="" className="w-36 h-auto" />
+            <Link href="/">
+              <Logo title="" className="w-36 h-auto" />
+            </Link>
           </div>
           {/*Desktop buttons */}
           <div className="hidden sm:block">
@@ -36,10 +39,10 @@ export default function Navbar() {
               LINK 3
             </a>
             <a
-              href=""
+              href="/about"
               className="text-gunmetal text-lg px-4 hover:text-goldAccent duration-700"
             >
-              LINK 4
+              ABOUT
             </a>
           </div>
           {/*icons */}
@@ -148,7 +151,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div className={`${languageMenu ? "block" : "hidden"} text-goldAccent`}>
+        <div className={`${languageMenu ? "block" : "hidden"} text-goldAccent text-center`}>
           <button
             className="p-2 rounded hover:cursor-pointer m-auto focus:bg-white/10 active:bg-white/10"
             onClick={() => {
@@ -184,8 +187,8 @@ export default function Navbar() {
           <a href="" className="text-gunmetal text-lg px-4 block">
             LINK 3
           </a>
-          <a href="" className="text-gunmetal text-lg px-4 block">
-            LINK 4
+          <a href="/about" className="text-gunmetal text-lg px-4 block">
+            ABOUT
           </a>
         </div>
       </nav>
