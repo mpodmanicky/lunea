@@ -1,8 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @theme {
   --color-charcoal: #2a2b2d;
-  --color-gunmetal: #6c6e70;
+  --color-gunmetal: #e6e6e7;
+  --font-body: "Inter";
+  --font-playfair: "Playfair Display";
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
